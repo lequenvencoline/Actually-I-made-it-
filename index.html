@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Actually I Made It</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.side {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: flex 0.4s ease;
+}
+
+.side:hover {
+    flex: 1.1;
+}
+
+.side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.15);
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.title {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    letter-spacing: 4px;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">ACTUALLY I MADE IT</div>
+
+<div class="container">
+
+<a class="side" href="https://inesminoizquierdo.com/">
+    <img src="ines.jpg">
+    <div class="overlay">INÉS MIÑO IZQUIERDO</div>
+</a>
+
+<a class="side" href="https://colinelequenven.com/">
+    <img src="coline.jpg">
+    <div class="overlay">COLINE LE QUENVEN</div>
+</a>
+
+</div>
+
+</body>
+</html>
